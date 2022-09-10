@@ -1,0 +1,15 @@
+import pygame as pg
+from time import sleep
+pg.init()
+window = pg.display.set_mode((0,0),pg.FULLSCREEN)
+pg.mixer.init()
+pg.mixer.music.load("Ratsasan Theme.mp3")
+pg.mixer.music.play()
+sleep(8)
+pg.mixer.music.load("scarymusic.mp3")
+pg.mixer.music.play()
+sleep(2)
+image = pg.image.load("scaryimage.png")
+window.blit(image,(0,0))
+pg.display.update()
+sleep(5)
